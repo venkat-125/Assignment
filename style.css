@@ -1,0 +1,369 @@
+* {
+box-sizing: border-box; 
+margin: 0; 
+padding: 0;
+}
+body {font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif; 
+color: #424242; 
+line-height: 1.4;}
+.container { 
+    margin: 2em auto;
+ max-width: 630px; 
+ text-align: center; }
+
+/* FONTS:
+ font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif; 
+*/
+
+
+/* COLORS: 
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+.container{
+  margin-top:100px;
+}
+.maincontainer{
+    border: 1px solid #eaeaea;
+    margin: 1em auto;
+    max-width: 400px;
+
+}
+.inner-container{
+    margin: 1em auto;
+    max-width: 400px;
+    
+    padding: 20px 25px 20px 25px;   
+}
+#file{
+    width: 100%;
+    height: 20px;
+    border-radius: unset;
+   border: 1px solid #eaeaea;
+}
+
+
+
+progress::-webkit-progress-value {
+  background: #EF5F3C;
+}
+
+progress::-webkit-progress-bar {
+  background: white;
+}
+.txt-title1{
+    padding: 10px 22px 10px 22px;
+    text-align: -webkit-auto;
+    font-size: 20px;
+}
+.txt-title{
+	 padding: 10px 22px 20px 22px;
+    text-align: -webkit-left;
+    font-size: 20px;
+}
+.txt-hot{
+color: #EF5F3C;
+}
+.maindiv{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.div1{
+       width: 55%;
+    text-align: center;
+    padding-left: 20px;
+}
+.span-que{
+    color: #20A1D4;
+	float:left;
+	padding:10px 22px;
+	
+}
+.button{
+    background: #1CBC2C;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    padding: 11px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+	    width: 125px;
+    font-size: 16px;
+}
+.doller{
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    display: block;
+    padding: 11px 18px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bolder;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 90%;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #EF5F3C;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*tool tip*/
+.tooltip {
+  position: relative;
+  display: contents;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  height: 50px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 20px 15px 20px;
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 40.9%;
+  margin-left: -60px;
+  font-size: 18px;
+}
+
+.tooltip .tooltiptext::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+.btn{
+	padding:8px 55px 8px 53px;
+}
+
+
+h1{
+	font-size: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+ .container { 
+    margin: 2em auto;
+ max-width: auto; 
+ text-align: center; 
+ margin-top:100px;
+ }
+
+
+
+.maincontainer{
+    border: 1px solid #eaeaea;
+    margin: 1em 1em;
+    
+
+}
+h1{
+	font-size: 31px;
+}
+.inner-container{
+    margin: 1em auto;
+    max-width: 400px;
+    
+    padding: 20px 25px 20px 25px;   
+}
+#file{
+    width: 100%;
+    height: 20px;
+    border-radius: unset;
+}
+.txt-title1{
+    padding: 10px 15px 10px 15px;
+    text-align: -webkit-auto;
+    font-size: 20px;
+}
+.txt-title{
+	 padding: 10px 15px 20px 15px;
+    text-align: -webkit-left;
+    font-size: 20px;
+}
+.txt-hot{
+color: #EF5F3C;
+}
+.maindiv{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.div1{
+    text-align: center;
+    padding-left: 15px;
+}
+.span-que{
+    color: #20A1D4;
+	float:left;
+	padding:10px 15px;
+}
+.button{
+    background: #1CBC2C;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    padding: 11px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+	    width: 125px;
+    font-size: 16px;
+}
+.doller{
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    display: block;
+    padding: 11px 18px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bolder;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 90%;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #EF5F3C;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.tooltip {
+  position: relative;
+  display: contents;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    margin: auto;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.btn{
+	padding:8px 55px 8px 53px;
+	width:90%;
+	margin-bottom: 8px;
+}
+
+} 

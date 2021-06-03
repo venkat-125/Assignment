@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+
+<h1>Recreate this using HTML &amp; CSS</h1>
+<div class="maincontainer">
+    <div class="tooltip">
+        <progress id="file"  value="133" max="300">44%</progress>
+        <span class="tooltiptext"><span id="tool">$167</span> still needed for this project</span>
+      </div>
+    
+    <div class="inner-container">
+        <p class="txt-title1"><span class="txt-hot">Only 3 days left</span> to fund this project.</p>
+        <p class="txt-title">join the 42 other donors who have already supported this project. Every doller helps.</p>
+        <div class="maindiv">
+            <div class="div1"> 
+                <input type="number" class="doller" id="doller" value="50" placeholder="$ 50" min="1" max="167">
+            </div>
+            <div class="div2">
+                <button type="submit" class="button" onclick="myFunction()"> Give Now</button>
+            </div>
+        </div>
+        <span class="span-que" id="myBtn" ><em>why give $50?</em></span>
+    </div>
+	
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Collecting donations for this project</p>
+    </div>
+  
+  </div>
+  
+  <div class="buttons">
+                <button class="btn" > Save for ater</button>
+				<button class="btn" > Tell your friends</button>
+  </div>
+</div>
+
+</body>
+<script>
+
+
+var file=document.getElementById('file').value;
+console.log('file-',file)
+
+function myFunction(){
+  var donation=document.getElementById('doller').value;
+  console.log('donation-',donation,'file-',file)
+var adddoller= parseInt(file) +parseInt(donation) ;
+
+console.log('adddoller-',adddoller)
+document.getElementById('file').value=adddoller;
+document.getElementById('file').innerHTML=adddoller;
+
+console.log('added =',adddoller, 'total=', adddoller+file)
+var tooltipval=300-adddoller;
+console.log('tooltip',tooltipval);
+
+document.getElementById('tool').innerHTML=tooltipval;
+
+}
+
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</html>
